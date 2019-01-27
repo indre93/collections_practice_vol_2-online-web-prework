@@ -27,6 +27,7 @@ end
 def count_elements(array)
 #[{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}]
 #expected: [{:count=>2, :name=>"blake"}, {:count=>1, :name=>"ashley"}]
+  new_array(:count) = []
   array.collect {|x| count + x}
 end
 
