@@ -35,7 +35,6 @@ end
 #combines two nested data structures into one
 def merge_data(hash, hash2)
   hash = hash + hash2
-  hash.uniq
 end
 
 
