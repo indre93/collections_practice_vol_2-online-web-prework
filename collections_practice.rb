@@ -33,7 +33,7 @@ end
 
 #combines two nested data structures into one
 def merge_data(hash, hash2)
-  hash << hash2
+  hash.merge(hash2)
 end
 
 
