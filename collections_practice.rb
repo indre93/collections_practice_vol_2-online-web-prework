@@ -34,8 +34,16 @@ end
 
 
 #combines two nested data structures into one
-def merge_data(hash, hash2)
-  hash.merge(hash2)
+def merge_data(keys, data)
+  keys.each do |object|
+    matchingProperty = object[:first_name]
+    puts object
+    otherObject = data[0][matchingProperty]
+    
+    otherObject.each do |property,value|
+      object[property] = value
+    end
+  end
 end
 
 
@@ -54,6 +62,6 @@ def organize_schools(schools)
 #     "Chicago"=>["dev boot camp chicago"]}
 #  }
   schools.invert.each do |key, value|
-    puts "#{key.sort.to_s}: [#{value}]"
+    puts "#{key.sort}: #{value}"
   end
 end
