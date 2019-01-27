@@ -37,7 +37,7 @@ def merge_data(keys, data)
     name = value
     new = data[0][name]
       new.each {|k, v| name[k] = v}
-    
+
   end
 end
 
