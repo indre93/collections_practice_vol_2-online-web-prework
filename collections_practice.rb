@@ -53,5 +53,5 @@ def organize_schools(schools)
 #     "Chicago"=>["dev boot camp chicago"]}
 #  }
   schools.invert
-  schools.value
+  schools.values
 end
