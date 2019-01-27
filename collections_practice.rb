@@ -33,8 +33,12 @@ end
 
 #combines two nested data structures into one
 def merge_data(keys, data)
-  data[0] = keys[:first_name]
-
+  keys.each do |key, value|
+    name = value
+    new = data[0][name]
+      new.each {|k, v| name[k] = v}
+    
+  end
 end
 
 
