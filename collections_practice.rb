@@ -34,7 +34,7 @@ end
 #combines two nested data structures into one
 def merge_data(key, data)
   key[:name]
-  
+
 end
 
 
