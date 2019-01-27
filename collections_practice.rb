@@ -27,7 +27,7 @@ end
 def count_elements(array)
 #[{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}]
 #expected: [{:count=>2, :name=>"blake"}, {:count=>1, :name=>"ashley"}]
-  array[1].insert(0, :count)
+  array[1][2]
 end
 
 
