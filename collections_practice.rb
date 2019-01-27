@@ -32,8 +32,9 @@ end
 
 
 #combines two nested data structures into one
-def merge_data(v1, v2)
-  v1[0].values.map.with_index {|v, i| v2[i].merge(v)}
+def merge_data(key, data)
+  key[:name]
+  
 end
 
 
