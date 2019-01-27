@@ -34,7 +34,6 @@ end
 #combines two nested data structures into one
 def merge_data(hash, hash2)
   hash = hash + hash2
-  hash.flatten
 end
 
 
@@ -53,5 +52,5 @@ def organize_schools(schools)
 #     "Chicago"=>["dev boot camp chicago"]}
 #  }
   schools.invert
-  schools.values
+  schools.keys
 end
