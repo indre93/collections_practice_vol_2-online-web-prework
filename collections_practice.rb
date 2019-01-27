@@ -35,6 +35,7 @@ end
 def merge_data(keys, data)
   keys.each do |key, value|
     name = value
+    puts name
     new = data[0][name]
       new.each {|k, v| name[k] = v}
 
