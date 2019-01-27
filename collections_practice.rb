@@ -42,6 +42,7 @@ end
 def find_cool(hash)
 # [{:name => "blake",:temperature => "cool"}]
 
+
 end
 
 
@@ -52,7 +53,7 @@ def organize_schools(schools)
 #     "SF"=>["dev boot camp", "Hack Reactor"],
 #     "Chicago"=>["dev boot camp chicago"]}
 #  }
-  schools.invert.each do |key, value|
-    puts "#{key.sort}: #{value}"
+  schools.each do |key, value|
+    puts "#{key}: #{value.sort}"
   end
 end
