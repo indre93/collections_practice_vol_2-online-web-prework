@@ -27,7 +27,7 @@ end
 def count_elements(array)
 #[{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}]
 #expected: [{:count=>2, :name=>"blake"}, {:count=>1, :name=>"ashley"}]
-  new_array = array[0] << :count
+  new_array = array[0].:count
   array.map {|x| x}
 end
 
@@ -35,6 +35,7 @@ end
 #combines two nested data structures into one
 def merge_data(hash, hash2)
   hash = hash + hash2
+  hash.uniq
 end
 
 
