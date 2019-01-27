@@ -32,7 +32,7 @@ end
 
 
 #combines two nested data structures into one
-def merge_data(keys)
+def merge_data(keys, data)
   keys[:first_name]
 
 end
