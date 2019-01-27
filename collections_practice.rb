@@ -53,7 +53,7 @@ def organize_schools(schools)
 #     "SF"=>["dev boot camp", "Hack Reactor"],
 #     "Chicago"=>["dev boot camp chicago"]}
 #  }
-  schools.invert.each do |key, value|
-    puts value
+  schools.invert
   end
+  schools.value
 end
