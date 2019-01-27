@@ -52,6 +52,6 @@ def organize_schools(schools)
 #     "Chicago"=>["dev boot camp chicago"]}
 #  }
   schools.invert.each do |key, value|
-    puts "#{key.to_s.split(:location)}: #{value}"
+    puts "#{key.to_s.split(location)}: #{value}"
   end
 end
