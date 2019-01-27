@@ -51,6 +51,5 @@ def organize_schools(schools)
 #     "SF"=>["dev boot camp", "Hack Reactor"],
 #     "Chicago"=>["dev boot camp chicago"]}
 #  }
-  schools.invert
   schools.sort_by {|item| [item[:location]]}
 end
