@@ -53,7 +53,7 @@ def organize_schools(schools)
 #     "SF"=>["dev boot camp", "Hack Reactor"],
 #     "Chicago"=>["dev boot camp chicago"]}
 #  }
-  schools.each do |key, value|
-    puts "#{key}: #{value.sort}"
+  schools.invert.each do |key, value|
+    puts "#{key.sort}: #{value}"
   end
 end
