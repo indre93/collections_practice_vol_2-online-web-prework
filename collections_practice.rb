@@ -35,8 +35,7 @@ end
 
 #combines two nested data structures into one
 def merge_data(keys, data)
-  keys.each do |object|
-    matchingProperty = object[:first_name]
+  keys.each {|data| k = data[:first_name]}
     puts object
     otherObject = data[0][matchingProperty]
 
