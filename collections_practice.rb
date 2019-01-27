@@ -19,20 +19,21 @@ end
 #remove anything that's not a string from an array
 # Hint: Use the method "class"  "blake".class
 def remove_non_strings(array)
-  array.keep_if { |word| word.is_a? String }
+  array.keep_if { |word| word.class == String }
 end
 
 
 #count how many times something appears in an array
 def count_elements(array)
-#[{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}])).to eq([{:name => "blake", :count => 2}, {:name => "ashley", :count => 1}]
-  array.to_a
+#[{:name => "blake"}, {:name => "blake"}, {:name => "ashley"}]
+#expected: [{:count=>2, :name=>"blake"}, {:count=>1, :name=>"ashley"}]
+  array.insert(0, :count)(1, :count)
 end
 
 
 #combines two nested data structures into one
 def merge_data(hash, hash2)
-  hash.merge(hash2)
+  hash = hash + hash2
 end
 
 
@@ -51,6 +52,6 @@ def organize_schools(schools)
 #     "Chicago"=>["dev boot camp chicago"]}
 #  }
   schools.invert.each do |key, value|
-
+    puts value
   end
 end
